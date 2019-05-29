@@ -4,10 +4,9 @@
 using namespace std;
 
 int main() {
-	//int ret = sayHello();
-	int ret = 2;
+	int ret = sayHello();
     assert(ret == 0);
     return ret;
 
-	//change again please
+	//final, returned to original code
 }
