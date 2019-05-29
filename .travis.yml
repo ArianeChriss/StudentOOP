@@ -10,11 +10,6 @@ script:
 notifications:
   email:
     recipients:
-      - mz2325your_TAs_email@nyu.edu
-    on_success: always
-    on_failure: never
-
-    recipients:
+      - mz2325@nyu.edu
       - acs910@nyu.edu
     on_success: always
-    on_failure: always  
