@@ -13,3 +13,4 @@ notifications:
       - mz2325@nyu.edu
       - acs910@nyu.edu
     on_success: always
+    on_failure: never
