@@ -36,8 +36,9 @@ void fill_vector(vector<int>& v, int n) {
  * */
 void print_vector(const vector<int>& v) {
 	for (int i : v) {
-		cout << i << endl;
+		cout << i << " ";
 	}
+	cout << endl;
 }
 
 /*
