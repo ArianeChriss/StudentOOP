@@ -94,6 +94,7 @@ int sum2(int n) {
 	for (int i = 0; i <= n; ++i) {
 		sum += i;
 	}
+	return sum;
 }
 
 /*
@@ -113,3 +114,8 @@ void pull_apart_string(std::string s) {
 	}
 }
 
+/*
+int main() {
+	cout << abs(-11) << endl;
+}
+*/
