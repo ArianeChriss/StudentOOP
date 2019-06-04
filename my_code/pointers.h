@@ -25,7 +25,7 @@ struct Student {
     Student(std::string nm) : name(nm), ta(nullptr) {}
 };
 
-void assignTA(Student& s, Student& ta);
-void printTAs(std::vector<Student> students);
+void assignTA(Student* s, Student* ta);
+void printTAs(std::vector<Student*> students);
 
 #endif
