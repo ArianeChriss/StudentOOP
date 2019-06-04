@@ -52,7 +52,7 @@ void assignTA(Student* s, Student* ta) {
 void printTAs(vector<Student*> students) {
 	for (Student* s : students) {
 		if (s->ta) {
-			cout << s->name << " has TA " << s->ta << endl;
+			cout << s->name << " has TA " << (s->ta)->name << endl;
 		}
 		else {
 			cout << s->name << " has no TA" << endl;
