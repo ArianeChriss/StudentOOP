@@ -11,6 +11,9 @@ Weather::Weather(std::string nm, GPS loc) :
     station_nm(nm), my_loc(loc) {
 }
 
+void Weather::add_reading(WReading wr) {
+	wreadings.push_back(wr);
+}
 
 string Weather::get_name() const {
     return station_nm;
@@ -34,5 +37,12 @@ ostream & operator<<(ostream & os, const Weather & w)
 {
 	os << w.get_name() << "\n" << w.get_rating() << "\n" 
 		<< w.my_loc << endl;
+	return os;
+}
+
+ostream & operator<<(ostream & os, const WReading & wr) {
+	os << wr.date << "\nTemperature: " << wr.temperature
+		<< "\nHumidity: " << wr.humidity << "\nWindspeed: "
+		<< wr.windspeed;
 	return os;
 }

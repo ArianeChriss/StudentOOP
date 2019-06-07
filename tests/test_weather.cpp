@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include "../my_code/weather.h"
+#include "../my_code/date.h"
 
 using namespace std;
 
@@ -13,9 +14,9 @@ int main() {
     cin >> filenm;
 
     ifstream rfile(filenm);
-    if (!rfile) {
+    while (!rfile) {
         cout << "Could not read input file: " << filenm << endl;
-        exit(1);
+		cout << "Input the name of the new readings file:\n";
     }
     int m, d, y;
     double temp, hum, ws;
