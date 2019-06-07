@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include "date.h"
 
 struct GPS {
     double latitude;
