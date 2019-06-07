@@ -22,6 +22,7 @@ class Weather {
  public:
     Weather(std::string nm, GPS loc);
     std::string get_name() const;
+	//std::ostream& operator<<(std::ostream& os, const Weather& w);
     int get_rating() const;
     void set_rating(int new_rating);
  private:
