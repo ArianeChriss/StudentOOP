@@ -71,6 +71,8 @@ class Complex {
      * */
     Complex operator--(int dummy);
 
+	Complex operator-=(const Complex& c);
+
     /*
      * Let's do multiplication by a scalar:
      * */
