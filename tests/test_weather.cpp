@@ -19,7 +19,6 @@ int main() {
 		cout << "Input the name of the new readings file:\n";
 		cin >> filenm;
 		rfile.open(filenm);
-		//ifstream rfile(filenm);
     }
     int m, d, y;
     double temp, hum, ws;

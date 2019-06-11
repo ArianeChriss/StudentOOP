@@ -19,7 +19,9 @@ class WReading {
  public:
     WReading(Date dt, double temp, double hum, double ws) :
         date(dt), temperature(temp), humidity(hum), windspeed(ws) {}
-
+	int get_temp() { return temperature; }
+	int get_humidity() { return humidity; }
+	int get_windspeed() { return windspeed; }
  private:
     Date date;
     double temperature;  // stored temp in C
@@ -42,6 +44,8 @@ class Weather {
     int get_rating() const;
     void set_rating(int new_rating);
     void add_reading(WReading wr);
+	// double get_heat_index(WReading& wr);
+	// double get_wind_chill(WReading& wr);
  private:
     std::vector<WReading> wreadings;
     std::string station_nm;
