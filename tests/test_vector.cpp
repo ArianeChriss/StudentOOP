@@ -13,6 +13,7 @@ int main() {
     MyVec v = MyVec();
     for (int i = 0; i < 200; i++) {
         v.push_back(i);
+		cout << endl << v[i] << endl;
         copy_vector(v);
     }
     assert(v[199] == 199);
