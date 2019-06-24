@@ -105,10 +105,6 @@ Node* duplicate(Node* head) {
  * Reverse the list: return a brand new list with everything reversed.
  * */
 
-/*
-	so in this function, curr is the node in the original list that shows where you are, and new_next is the node in the new list that needs to have the newest node attached to it?
-*/
-
 Node* reverse(Node* curr, Node* new_next = nullptr) {
 	if (!curr->next) {
 		if (new_next) {
